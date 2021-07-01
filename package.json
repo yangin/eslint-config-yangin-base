@@ -1,0 +1,27 @@
+{
+  "name": "@yangin/eslint-config-yangin-base",
+  "version": "1.0.0",
+  "description": "a base eslint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangin/eslint-config-yangin-base.git"
+  },
+  "keywords": [
+    "eslint",
+    "yangin"
+  ],
+  "author": "yangin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yangin/eslint-config-yangin-base/issues"
+  },
+  "homepage": "https://github.com/yangin/eslint-config-yangin-base#readme",
+  "peerDependencies": {
+    "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
