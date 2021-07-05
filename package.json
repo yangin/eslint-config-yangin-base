@@ -20,8 +20,16 @@
     "url": "https://github.com/yangin/eslint-config-yangin-base/issues"
   },
   "homepage": "https://github.com/yangin/eslint-config-yangin-base#readme",
+  "dependencies": {
+    "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
+    "eslint-plugin-node": "^10",
+    "eslint-plugin-promise": "^4",
+    "eslint-plugin-import": "^2.22.1"
+  },
   "peerDependencies": {
     "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
+    "eslint-plugin-node": "^10",
+    "eslint-plugin-promise": "^4",
     "eslint-plugin-import": "^2.22.1"
   }
 }
