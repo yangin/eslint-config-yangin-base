@@ -1,6 +1,6 @@
 {
   "name": "@yangin/eslint-config-yangin-base",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a base eslint config",
   "main": "index.js",
   "scripts": {
