@@ -1,6 +1,6 @@
 {
   "name": "@yangin/eslint-config-yangin-base",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a base eslint config",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,8 @@
   },
   "keywords": [
     "eslint",
-    "yangin"
+    "yangin",
+    "javascript"
   ],
   "author": "yangin",
   "license": "MIT",
