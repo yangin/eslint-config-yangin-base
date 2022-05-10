@@ -12,6 +12,12 @@ module.exports = {
   },
 
   rules: {
+    // 当大括号是可以省略的，强制不使用它们
+    'arrow-body-style': [ 'error', 'as-needed' ],
+
+    // 要求在所有情况下使用圆括号将参数括起来
+    'arrow-parens': [ 'error', 'as-needed' ],
+
     // 强制箭头函数的箭头前后使用一致的空格 --fix
     'arrow-spacing': [ 'error', { before: true, after: true } ],
 
@@ -30,6 +36,9 @@ module.exports = {
     // 禁止类成员中出现重复的名称
     'no-dupe-class-members': [ 'error' ],
 
+    // 禁止重复模块导入
+    'no-duplicate-imports': [ 'error' ],
+
     // 禁止 Symbolnew 操作符和 new 一起使用
     'no-new-symbol': [ 'error' ],
 
@@ -47,6 +56,15 @@ module.exports = {
 
     // 要求使用 let 或 const 而不是 var --fix
     'no-var': [ 'error' ],
+
+    // 要求对象字面量中属性使用简写语法。方法不做要求 --fix
+    'object-shorthand': [ 'error', 'properties' ],
+
+    // 要求使用 const 声明那些声明后不再被修改的变量 --fix
+    'prefer-const': [ 'error' ],
+
+    // 要求使用模板字面量而非字符串连接 --fix
+    'prefer-template': [ 'error' ],
 
     // 要求 generator 函数内有 yield
     'require-yield': [ 'error' ],

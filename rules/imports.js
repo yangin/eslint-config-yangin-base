@@ -37,8 +37,14 @@ module.exports = {
     // 【强制】确保所有的import在声明之前
     'import/first': [ 'error' ],
 
+    // 强制在最后一个顶级导入语句或要求调用之后有一个空行
+    'newline-after-import': [ 'error', { 'count': 1 } ],
+
     // 【强制】报告在多个地方重复导入同一模块 --fix
     'import/no-duplicates': [ 'error' ],
+
+    // 【强制】禁止通过 var 或 let 使用可变导出
+    'import/no-mutable-exports': [ 'error' ],
 
     // 【强制】禁止使用默认导出作为本地命名导入，如 export default 'foo'; export const bar = 'baz';
     'import/no-named-default': [ 'error' ],

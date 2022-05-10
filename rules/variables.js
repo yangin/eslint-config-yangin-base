@@ -7,7 +7,7 @@ module.exports = {
     'no-label-var': [ 'error' ],
 
     // 禁用特定的全局变量
-    'no-restricted-globals': [ 'error', 'localStorage', 'Screen', 'name', 'history', 'External' ], // safari Throw [SecurityError (DOM Exception 18): The operation is insecure], use MB.localStorageDelegate instead
+    'no-restricted-globals': [ 'error', 'isNaN', 'isFinite', 'event', 'name'],
 
     // 禁止将标识符定义为受限的名字
     'no-shadow-restricted-names': [ 'error' ],

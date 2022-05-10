@@ -1,7 +1,10 @@
 module.exports = {
   rules: {
-    // 强制要求在数组括号内使用一个或多个空格、或折行 --fix
-    'array-bracket-spacing': [ 'error', 'always' ],
+    // 禁止在数组括号内出现空格 --fix
+    'array-bracket-spacing': [ 'error', 'never' ],
+
+    // 强制数组方法的回调函数中有 return 语句
+    'array-callback-return': ['error'],
 
     // 强制在代码块中开括号前和闭括号后有一个或多个空格 --fix
     'block-spacing': [ 'error', 'always' ],
@@ -14,6 +17,7 @@ module.exports = {
 
     // 要求或禁止末尾逗号 --fix
     'comma-dangle': [ 'error', { arrays: 'never', objects: 'never', imports: 'never', exports: 'never', functions: 'never' } ],
+
     // 强制在逗号前后使用一致的空格,逗号后使用空格，逗号前不使用 --fix
     'comma-spacing': [ 'error', { before: false, after: true } ],
 
@@ -23,13 +27,19 @@ module.exports = {
     // 强制在计算的属性的方括号中使用一个或多个空格 --fix
     'computed-property-spacing': [ 'error', 'always' ],
 
+    // 当获取当前执行环境的上下文时，强制使用一致的this别名self
+    'consistent-this': ['error', 'self'],
+
     // 禁止文件末尾存在空行 --fix
     'eol-last': [ 'error' ],
 
     // 禁止在函数名和开括号之间有空格 --fix
     'func-call-spacing': [ 'error', 'never' ],
 
-    // 强制使用一致的缩进
+    // 禁止在箭头函数体之前出现换行
+    'implicit-arrow-linebreak': [ 'error', 'beside' ],
+
+    // 强制使用一致的缩进 --fix
     'indent': [ 'error', 2, {
       SwitchCase: 1,
       VariableDeclarator: 1,
@@ -51,11 +61,17 @@ module.exports = {
     // 要求在关键字之前至少有一个空格, 要求在关键字之后至少有一个空格 --fix
     'keyword-spacing': [ 'error', { before: true, after: true } ],
 
+    // 要求或禁止在三元操作数中间换行
+    'multiline-ternary': ['error', 'always-multiline'],
+    
     // 要求构造函数首字母大写,要求调用 new 操作符时有首字母大写的函数，允许调用首字母大写的函数时没有 new 操作符，检查对象属性
     'new-cap': [ 'error', { newIsCap: true, capIsNew: false, properties: true } ],
 
     // 禁止调用无参构造函数时有圆括号
     'new-parens': [ 'error' ],
+
+    // 要求方法链中允许在同一行成链的深度为2 --fix
+    'newline-per-chained-call': [ 'error', { ignoreChainWithDepth: 2 } ],
 
     // 禁用 Array 构造函数
     'no-array-constructor': [ 'error' ],
@@ -68,6 +84,9 @@ module.exports = {
 
     // 禁止空格和 tab 的混合缩进
     'no-mixed-spaces-and-tabs': [ 'error' ],
+
+    // 禁止连续赋值
+    'no-multi-assign': [ 'error' ],
 
     // 禁止出现多行空行 --fix
     'no-multiple-empty-lines': [ 'error', { max: 1, maxEOF: 0 } ],
@@ -87,6 +106,9 @@ module.exports = {
     // 禁止属性前有空白 --fix
     'no-whitespace-before-property': [ 'error' ],
 
+    // 禁止单行语句之前有换行 --fix
+    'nonblock-statement-body-position': [ 'error', 'beside' ],
+
     // 要求花括号内有空格 (除了 {}) --fix
     'object-curly-spacing': [ 'error', 'always' ],
 
@@ -101,6 +123,9 @@ module.exports = {
 
     // 要求尽可能地使用单引号, 允许字符串使用反勾号 --fix
     'quotes': [ 'error', 'single', { allowTemplateLiterals: true } ],
+
+    // 要求对象字面量属性名称使用一致的引号，要么全部用引号，要么都不用
+    'quote-props': [ 'error', 'consistent' ],
 
     // 强制分号之前不使用，之后使用空格 --fix
     'semi-spacing': [ 'error', { before: false, after: true } ],
