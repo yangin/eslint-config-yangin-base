@@ -10,13 +10,13 @@ module.exports = {
     'consistent-return': ['error'],
 
     // 强制所有控制语句使用一致的括号风格 --fix
-    curly: ['error', 'multi-line'],
+    'curly': ['error', 'multi-line'],
 
     // 强制在点号之前和之后一致的换行 --fix
     'dot-location': ['error', 'property'],
 
     // 要求使用 === 和 !== --fix
-    eqeqeq: ['error', 'always', { null: 'ignore' }],
+    'eqeqeq': ['error', 'always', { null: 'ignore' }],
 
     // 禁用 alert、confirm 和 prompt
     'no-alert': ['error'],
@@ -123,8 +123,8 @@ module.exports = {
       {
         allowShortCircuit: true,
         allowTernary: true,
-        allowTaggedTemplates: true,
-      },
+        allowTaggedTemplates: true
+      }
     ],
 
     // 禁用出现未使用过的标 --fix
@@ -152,6 +152,6 @@ module.exports = {
     'wrap-iife': ['error', 'any', { functionPrototypeMethods: true }],
 
     // 要求或禁止 “Yoda” 条件 --fix
-    yoda: ['error', 'never'],
-  },
-};
+    'yoda': ['error', 'never']
+  }
+}
